@@ -10,6 +10,7 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
+import { DirectivesComponent } from './directives/directives.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -20,7 +21,8 @@ const routes: Routes = [
     {path:'cal', component:CalculatorComponent},
     {path:'rectangle', component:RectangleComponent},
     {path:'circle', component:CircleComponent},
-    {path:'BMI', component: BMIComponent }
+    {path:'BMI', component: BMIComponent },
+    {path:'directives', component:DirectivesComponent}
   ]},
   {path:'', component: LoginComponent},
   {path:'**', component:PagenotfoundComponent}

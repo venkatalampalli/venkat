@@ -45,3 +45,6 @@ button:hover{
     background-color: rgb(255, 2, 2);
     
 }
+.right{
+    overflow: auto;
+}
