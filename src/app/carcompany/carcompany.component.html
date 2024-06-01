@@ -1,0 +1,15 @@
+<div class="parent">
+    <div class="child">
+        <label for="">Company:</label>
+        <select [(ngModel)]="company">
+            <option >Toyota</option>
+            <option>Benz</option>
+            <option>Audi</option>
+        </select>
+        <br>
+        <img *ngIf="company=='Audi'" src="/assets/audi.jpeg" alt="img">
+        <img *ngIf="company=='Toyota'" src="/assets/toyota.jpeg" alt="img">
+        <img *ngIf="company=='Benz'" src="/assets/benz.jpeg" alt="img">
+
+    </div>
+</div>

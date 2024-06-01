@@ -1,0 +1,47 @@
+<div class="parent">
+    <div class="child">
+        <h1>Student Registration</h1>
+        <label for="name">Name</label>
+        <input type="text" name="" id="name" [(ngModel)]="name">
+        <br>
+        <label for="marks">Marks</label>
+        <input type="number" name="" id="marks" [(ngModel)]="marks">
+        <br>
+        <label for="fee">fee</label>
+        <input type="number" name="" id="fee" [(ngModel)]="fee">
+        <br>
+        <button [disabled]="!(name)" (click)="register()">Register</button>
+        <br>
+        <h2>All Students</h2>
+        <button id="b" (click)="pendingfee()">Pendingfee</button>
+        <button id="b" (click)="low()">Marks LowTohigh</button>
+        <button id="b" (click)="high()">Marks HighToLow</button>
+        <button id="b" (click)="sal()">Salutation</button>
+
+
+
+        <br>
+        <br>
+        <table border="5">
+            
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Marks</th>
+                    <th>Fee</th>
+                    <th>Activity</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let student of students ; let i=index">
+                    <td [ngClass]="{'red': student.name=='Venkat', 'blue': student.name==''}" >{{student.name}}</td>
+                    <td [ngStyle]="{'color' : student.marks<=100&& student.marks>89? 'red':'blue'}">{{student.marks}}</td>
+                    <td>{{student.fee}}</td>
+                    <td><button (click)="delete(i)">delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+        <br>
+
+    </div>
+</div>

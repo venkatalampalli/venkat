@@ -1,0 +1,26 @@
+<div class="parent">
+    <div class="child">
+        <div class="reg">
+            <h2>Event Registration</h2>
+        <br>
+        <label for="name">Name:</label>
+        <input type="text" name="" id="name" [(ngModel)]="name">
+        <button [disabled]="!name" (click)="register()">Register</button>
+        <br>
+        <h2>Registered users</h2>
+
+        </div>
+        
+        <div class="items" *ngFor="let name of names; let i=index">
+            <h2> {{i+1}}) {{name}} <button (click)="delete(i)">Delete</button>
+            </h2>
+        </div>
+        <button *ngIf="names.length" (click)="deletelast()">Delete Last</button>
+        <button id="del" *ngIf="names.length " (click)="deleteall()" >DeleteAll</button>
+        <button id="del" *ngIf="names.length " (click)="atoz()" >A->Z</button>
+        <button id="del" *ngIf="names.length " (click)="ztoa()" >Z->A</button>
+        <button id="del" *ngIf="names.length " (click)="salutation()" >salutation</button>
+
+
+    </div>
+</div>

@@ -15,6 +15,10 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EventComponent } from './event/event.component';
+import { StudentsComponent } from './students/students.component';
+import { CarcompanyComponent } from './carcompany/carcompany.component';
+import { DiceGameComponent } from './dice-game/dice-game.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +34,10 @@ import { DirectivesComponent } from './directives/directives.component';
     CircleComponent,
     BMIComponent,
     DirectivesComponent,
+    EventComponent,
+    StudentsComponent,
+    CarcompanyComponent,
+    DiceGameComponent,
   ],
   imports: [
     BrowserModule,

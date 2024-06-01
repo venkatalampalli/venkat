@@ -11,6 +11,10 @@ import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
 import { BMIComponent } from './bmi/bmi.component';
 import { DirectivesComponent } from './directives/directives.component';
+import { EventComponent } from './event/event.component';
+import { StudentsComponent } from './students/students.component';
+import { CarcompanyComponent } from './carcompany/carcompany.component';
+import { DiceGameComponent } from './dice-game/dice-game.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -22,7 +26,11 @@ const routes: Routes = [
     {path:'rectangle', component:RectangleComponent},
     {path:'circle', component:CircleComponent},
     {path:'BMI', component: BMIComponent },
-    {path:'directives', component:DirectivesComponent}
+    {path:'directives', component:DirectivesComponent},
+    {path:'event', component:EventComponent},
+    {path:'students', component:StudentsComponent},
+    {path:'carcompany', component:CarcompanyComponent},
+    {path:'Dice', component:DiceGameComponent}
   ]},
   {path:'', component: LoginComponent},
   {path:'**', component:PagenotfoundComponent}

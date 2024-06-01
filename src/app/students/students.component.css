@@ -1,0 +1,46 @@
+.parent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.child{
+    width: 45%;
+    height: auto ;
+    background-color: rgb(255, 0, 0);
+    text-align: center;
+    border-radius: 20px;
+}
+h2{
+    text-transform: capitalize;
+}
+button{
+    background-color: rgb(254, 0, 182);
+    color: aliceblue;
+    border: 0;
+    border-radius: 2px;
+}
+button:hover{
+    background-color: rgb(189, 7, 7);
+    cursor: pointer;
+}
+#del{
+    margin-left: 8px;
+}
+input{
+    margin-bottom: 8px;
+}
+table{
+    margin-left: 120px;
+    background-color: aliceblue;
+}
+#b{
+    margin-left: 5px;
+}
+.red{
+    color: red;
+}
+.blue{
+    color: blue;
+}
