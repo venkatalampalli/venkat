@@ -19,7 +19,7 @@
 </select>
 
 <p *ngFor="let product of products">
-    The {{product.name}} price is {{product.price}} and rating is {{product.rating}}
+    The {{product.name}} price is {{product.price | balance}} and rating is {{product.rating}}
 </p>
 
 <table border="1">

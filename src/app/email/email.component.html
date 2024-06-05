@@ -1,0 +1,15 @@
+<div class="parent">
+    <div class="left">
+        <div *ngFor="let email of emails; let i= index"><h6>{{i+1}}</h6></div>
+        
+        
+    </div>
+    <div class="right">
+        <div *ngFor="let email of emails">
+            <h6 [ngClass]="{'black': email.completed==false , 'gray': email.completed == true}">{{email.title}}</h6>
+        </div>
+    </div>
+
+
+
+</div>

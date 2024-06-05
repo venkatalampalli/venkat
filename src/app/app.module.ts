@@ -19,6 +19,15 @@ import { EventComponent } from './event/event.component';
 import { StudentsComponent } from './students/students.component';
 import { CarcompanyComponent } from './carcompany/carcompany.component';
 import { DiceGameComponent } from './dice-game/dice-game.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { BalancePipe } from './balance.pipe';
+import { ShoppingComponent } from './shopping/shopping.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import {HttpClientModule} from '@angular/common/http';
+import { BankaccountsComponent } from './bankaccounts/bankaccounts.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { EmailComponent } from './email/email.component';
+import { ReloadComponent } from './reload/reload.component';
 
 @NgModule({
   declarations: [
@@ -38,11 +47,21 @@ import { DiceGameComponent } from './dice-game/dice-game.component';
     StudentsComponent,
     CarcompanyComponent,
     DiceGameComponent,
+    PipesComponent,
+    BalancePipe,
+    ShoppingComponent,
+    VehicleComponent,
+    BankaccountsComponent,
+    FlipkartComponent,
+    EmailComponent,
+    ReloadComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

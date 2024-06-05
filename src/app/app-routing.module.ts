@@ -15,6 +15,13 @@ import { EventComponent } from './event/event.component';
 import { StudentsComponent } from './students/students.component';
 import { CarcompanyComponent } from './carcompany/carcompany.component';
 import { DiceGameComponent } from './dice-game/dice-game.component';
+import { PipesComponent } from './pipes/pipes.component';
+import { ShoppingComponent } from './shopping/shopping.component';
+import { VehicleComponent } from './vehicle/vehicle.component';
+import { BankaccountsComponent } from './bankaccounts/bankaccounts.component';
+import { FlipkartComponent } from './flipkart/flipkart.component';
+import { EmailComponent } from './email/email.component';
+import { ReloadComponent } from './reload/reload.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -30,7 +37,14 @@ const routes: Routes = [
     {path:'event', component:EventComponent},
     {path:'students', component:StudentsComponent},
     {path:'carcompany', component:CarcompanyComponent},
-    {path:'Dice', component:DiceGameComponent}
+    {path:'Dice', component:DiceGameComponent},
+    {path:'pipes', component: PipesComponent},
+    {path:'shopping',component:ShoppingComponent},
+    {path:'vehicle', component:VehicleComponent},
+    {path:'bank', component:BankaccountsComponent},
+    {path:'flipkart', component:FlipkartComponent},
+    {path:'email', component:EmailComponent},
+    {path:'reload', component:ReloadComponent}
   ]},
   {path:'', component: LoginComponent},
   {path:'**', component:PagenotfoundComponent}

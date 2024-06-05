@@ -1,0 +1,43 @@
+<div class="parent">
+    <div class="child">
+        <div class="left">
+            <h2>Filters</h2>
+            <h3>Category</h3>
+            <input   type="checkbox" id="Men" (change)="menclothing()">
+            <label for="Men">Men's Clothing</label>
+            <br>
+            <input type="checkbox" id="jew" (change)="jewellery()">
+            <label for="jew">Jewellery</label>
+            <br> <input type="checkbox" id="women" (change)="womenclothing()">
+            <label for="women">Women's Clothing</label>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>Price</h3>
+            <input type="checkbox" id="rs" (change)="price1()">
+            <label for="rs">Rs.7 to Rs.50</label>
+            <br>
+            <input type="checkbox" id="rss" (change)="price2()">
+            <label for="rss">Rs.50 to Rs.300</label>
+            <br>
+            <input type="checkbox" id="rsss" (change)="price3()">
+            <label for="rsss">Rs.300 to Rs.600</label>
+            <br>
+            <input type="checkbox" id="r" (change)="price4()">
+            <label for="r">Rs.600 to Rs.1000</label>
+        </div>
+        <div class="right">
+            <div *ngFor="let item of items"  class="photos">
+                <img src="{{item.image}}" alt="">
+                <strong>{{item.title}}</strong>
+                <br>
+                <small>{{item.category}}</small>
+
+                <p><strong>Rs.{{item.price}} </strong> <del style="color: gray;">Rs.2999</del> <strong style="color: red; font-size: 12px;" >  (81% OFF)</strong></p>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>

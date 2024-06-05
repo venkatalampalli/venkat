@@ -8,7 +8,7 @@
 .child{
     width: 45%;
     height: auto ;
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(0, 200, 255);
     text-align: center;
     border-radius: 20px;
 }
@@ -32,14 +32,14 @@ input{
     margin-bottom: 8px;
 }
 table{
-    margin-left: 120px;
+    margin-left: 100px;
     background-color: aliceblue;
 }
 #b{
     margin-left: 5px;
 }
 .red{
-    color: red;
+    color: rgba(255, 0, 0, 0.717);
 }
 .blue{
     color: blue;

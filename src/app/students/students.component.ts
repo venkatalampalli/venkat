@@ -9,6 +9,7 @@ export class StudentsComponent implements OnInit {
   public name:string='';
   public marks:number=0;
   public fee:number=0;
+  public showtable:boolean=false;
 
   public students:any=[
     {name:'Venkat',marks:90,fee:20000},
@@ -52,5 +53,8 @@ export class StudentsComponent implements OnInit {
       student.name='Mr.'+student.name;
       return student;
     })
+  }
+  show(){
+    this.showtable=!this.showtable;
   }
 }

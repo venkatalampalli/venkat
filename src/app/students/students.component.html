@@ -12,6 +12,9 @@
         <br>
         <button [disabled]="!(name)" (click)="register()">Register</button>
         <br>
+        <br>
+        <button id="b" (click)="show()">Display Details</button>
+
         <h2>All Students</h2>
         <button id="b" (click)="pendingfee()">Pendingfee</button>
         <button id="b" (click)="low()">Marks LowTohigh</button>
@@ -22,7 +25,7 @@
 
         <br>
         <br>
-        <table border="5">
+        <table border="2" *ngIf="showtable">
             
             <thead>
                 <tr>
@@ -36,7 +39,7 @@
                 <tr *ngFor="let student of students ; let i=index">
                     <td [ngClass]="{'red': student.name=='Venkat', 'blue': student.name==''}" >{{student.name}}</td>
                     <td [ngStyle]="{'color' : student.marks<=100&& student.marks>89? 'red':'blue'}">{{student.marks}}</td>
-                    <td>{{student.fee}}</td>
+                    <td>{{student.fee | balance}}</td>
                     <td><button (click)="delete(i)">delete</button></td>
                 </tr>
             </tbody>

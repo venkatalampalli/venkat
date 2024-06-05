@@ -1,0 +1,24 @@
+<table class="table table-primary table-striped table-hover">
+    <thead>
+        <tr>
+            <th>Account Name</th>
+            <th>Available Balance</th>
+            <th>Account Number</th>
+            <th>City</th>
+            <th>Profile Picture</th>
+            <th>Id</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let bankaccount of bankaccounts ">
+            <td>{{bankaccount.account_name}}</td>
+            <td>{{bankaccount.available_balance}}</td>
+            <td>{{bankaccount.account_number}}</td>
+            <td>{{bankaccount.city}}</td>
+            <td><img src="{{bankaccount.profie_picture}}" alt="" width="100px" height="80px" style="border-radius: 50%;"></td>
+            <td>{{bankaccount.id}}</td>
+        </tr>
+    </tbody>
+</table>
+
+
