@@ -8,6 +8,8 @@ import { FlipkartService } from '../flipkart.service';
 })
 export class FlipkartComponent implements OnInit {
   public items:any=[];
+
+ 
   public categories:string="men's clothing";
   constructor( private _flipkartService:FlipkartService) {
 

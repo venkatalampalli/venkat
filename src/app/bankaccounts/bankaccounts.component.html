@@ -1,4 +1,28 @@
-<table class="table table-primary table-striped table-hover">
+search: <input type="text" [(ngModel)]="search" (keyup)="searchit()">
+Page: <select [(ngModel)]="page" (change)="pageno()">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+
+</select>
+column: <select [(ngModel)]="column">
+        <option value="account_name">Account Name</option>
+        <option value="available_balance">Available Balance</option>
+         <option value="account_number" > Account Number</option>
+         <option value="city">City</option>
+         <option value="id">ID</option>
+
+
+</select>
+Order: <select [(ngModel)]="order" >
+    <option value="asc">Ascending Order</option>
+    <option value="desc">Descending Order</option>
+</select>
+<button (click)="sort()">Sort</button>
+
+<table class="table table-striped table-hover">
     <thead>
         <tr>
             <th>Account Name</th>
@@ -7,6 +31,7 @@
             <th>City</th>
             <th>Profile Picture</th>
             <th>Id</th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -17,6 +42,9 @@
             <td>{{bankaccount.city}}</td>
             <td><img src="{{bankaccount.profie_picture}}" alt="" width="100px" height="80px" style="border-radius: 50%;"></td>
             <td>{{bankaccount.id}}</td>
+            <td>
+                <button class="btn btn-dark" (click)="delete(bankaccount.id)">Delete</button>
+            </td>
         </tr>
     </tbody>
 </table>

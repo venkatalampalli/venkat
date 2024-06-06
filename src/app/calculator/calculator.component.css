@@ -7,7 +7,7 @@
 }
 .child{
     width: 40%;
-    height: 50%;
+    height: auto;
     background-color: rgb(238, 23, 23);
     text-align: center;
     border-radius: 20px;

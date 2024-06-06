@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(to right, rgb(0, 0, 0),white,white ,rgb(0, 0, 0));
 }
 .bottom{
     width: 100%;
@@ -28,3 +28,4 @@ button{
     margin-top: 5px;
     margin-left: 8px;
 }
+
