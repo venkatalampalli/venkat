@@ -1,29 +1,30 @@
 .parent{
     width: 100vw;
     height: 100vh;
-    background-color:rgb(253, 253, 250) ;
     display: flex;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
     justify-content: center;
     align-items: center;
 }
 form{
- width: 200px;
- height: 300px;
- background-color: rgb(234, 242, 250);
- box-shadow: 0 0 10px gray;
+ width: 220px;
+ height: auto;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
  border-radius: 20px;
+ background-color: rgba(255, 255, 255, 0.9);
  text-align: center;
  
 }
 
 input{
     margin-bottom: 20px;
-    height: 20px;
+    margin-top: 10px;
+    height: 30px;
 
 }
 button{
     width: 80%;
-    height: 25px;
+    height: 30px;
     margin-top: 10px;
     border-radius: 10px;
     border: 0;

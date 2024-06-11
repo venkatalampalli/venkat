@@ -1,0 +1,59 @@
+<form [formGroup]="employeeForm">
+    <label for="">Name:</label>
+    <input type="text" formControlName="name" >
+    <br>
+    <label for="">Phone:</label>
+    <input type="text" formControlName="phone">
+    <br>
+   <div formGroupName="experience">
+    <label for="">Company:</label>
+    <input type="text" formControlName="company">
+    <br>
+    <label for="">Experience:</label>
+    <input type="text" formControlName="exp">
+    <br>
+    <label for="">Package:</label>
+    <input type="text" formControlName="package">
+    <br><br>
+   </div>
+   
+    <label for="">Project Type:</label>
+    <input type="radio" name="projecttype" value='Internal' formControlName="projecttype">
+    <label for="">Internal</label>
+    <input type="radio" name="projecttype" value='External' formControlName="projecttype">
+    <label for="">External</label>
+    <br>
+   
+   <div *ngIf="employeeForm.get('projecttype')?.value == 'Internal'">
+    <label for="">Project Manager Name:</label>
+    <input type="text" formControlName="int">
+    <br>
+   
+   </div>
+   <div *ngIf="employeeForm.get('projecttype')?.value== 'External'">
+    <label for="">Client Company Name</label>
+    <input type="text" formControlName="ext">
+    <br><br>
+   </div>
+   <button class="btn btn-danger" (click)="addskills()" >Add Skills</button>
+   <div formArrayName="skills">
+    <div *ngFor="let skil of skillsFormArray.controls; let i= index " formGroupName="{{i}}">
+        <br><br>
+        <h1>Skill{{i+1}}</h1>
+         <br>
+        <label for="">Skill:</label>
+        <input type="text" formControlName="skill">
+        <br>
+        <label for="">Rating:</label>
+        <input type="text" formControlName="rating">
+        <br>
+        <label for="">Experience In Skill:</label>
+        <input type="text" formControlName="expinskill">
+        <br>
+        
+       </div>
+    
+   </div>
+   <br> <br>
+   <button class="btn btn-success" (click)="submit()">Submit</button>
+</form>

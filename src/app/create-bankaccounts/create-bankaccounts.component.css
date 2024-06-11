@@ -1,0 +1,21 @@
+label{
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+    color: rgb(255, 255, 255);
+}
+form{
+    margin-top: 20px;
+    margin-left: 290px;
+    width: 400px;
+    height: auto;
+    background-image: linear-gradient(to  bottom,#2c5f75,#03374e );
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
+}
+button{
+    margin-left: 170px;
+}
+h1{
+    text-align: center;
+}

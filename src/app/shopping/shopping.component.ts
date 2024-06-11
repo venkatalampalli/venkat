@@ -41,9 +41,11 @@ export class ShoppingComponent implements OnInit {
 
   lowp(){
     this.products=this.products.sort((a:any,b:any)=> a.price-b.price);
+    
   }
   highp(){
     this.products=this.products.sort((a:any,b:any)=> b.price-a.price);
+
   }
   lowr(){
     this.products=this.products.sort((a:any,b:any)=> a.rating-b.rating);

@@ -1,0 +1,16 @@
+label{
+    display: inline-block;
+    width: 150px;
+    margin: 10px;
+    color: rgb(0, 0, 0);
+}
+button{
+    margin-left: 170px;
+}
+h1{
+    text-align: center;
+}
+.error{
+    color: red;
+    margin-left: 170px;
+}

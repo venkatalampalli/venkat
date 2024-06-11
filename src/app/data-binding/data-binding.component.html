@@ -6,11 +6,11 @@
 <h2> isIndian: {{isIndian}}</h2>
 
 <!-- property binding -->
-<button [disabled]="isValid">submit</button>
+<button [disabled]="!isValid">submit</button>
 
 <!-- event binding -->
 <button (click)="upload()">upload</button>
-
+<button>hiiiii</button>
 <button (dblclick)="send()">send</button>
 
 <input type="text" (keyup)="change()">

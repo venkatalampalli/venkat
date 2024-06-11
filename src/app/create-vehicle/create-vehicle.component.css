@@ -1,0 +1,18 @@
+
+label{
+    display: inline-block;
+    margin: 10px;
+    margin-left: 40px;
+    width: 100px;
+    color: aliceblue;
+}
+button{
+    margin: 20px;
+    margin-left: 180px;
+}
+form{
+    width: 400px;
+    height: auto;
+    background-color: rgb(84, 82, 82);
+    
+}

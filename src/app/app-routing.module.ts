@@ -22,10 +22,15 @@ import { BankaccountsComponent } from './bankaccounts/bankaccounts.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { EmailComponent } from './email/email.component';
 import { ReloadComponent } from './reload/reload.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateBankaccountsComponent } from './create-bankaccounts/create-bankaccounts.component';
+import { AuthenticationGuard } from './authentication.guard';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
-  {path: 'dashboard', component: DashboardComponent, children:[
+  {path: 'dashboard',canActivate:[AuthenticationGuard], component: DashboardComponent, children:[
     {path:'welcome', component:WelcomeComponent},
     {path:'home', component:HomeComponent},
     {path:'databinding', component: DataBindingComponent},
@@ -44,7 +49,11 @@ const routes: Routes = [
     {path:'bank', component:BankaccountsComponent},
     {path:'flipkart', component:FlipkartComponent},
     {path:'email', component:EmailComponent},
-    {path:'reload', component:ReloadComponent}
+    {path:'reload', component:ReloadComponent},
+    {path:'create-vehicle', component:CreateVehicleComponent},
+    {path:'create-bankaccount', component:CreateBankaccountsComponent},
+    {path: 'create-user', component: CreateUserComponent},
+    {path:'employee-details', component:EmployeeDetailsComponent}
   ]},
   {path:'', component: LoginComponent},
   {path:'**', component:PagenotfoundComponent}

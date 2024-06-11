@@ -22,7 +22,7 @@
     The {{product.name}} price is {{product.price | balance}} and rating is {{product.rating}}
 </p>
 
-<table border="1">
+<table class="table table-dark">
     <thead>
         <tr>
             <th>Name</th>
@@ -59,3 +59,8 @@
 </table>
 
 <h1 *ngIf="true">Hiii Venkat</h1>
+<h1 *ngFor="let product of products">
+    {{product.name}}
+    {{product.rating}}
+    {{product.price}}
+</h1>

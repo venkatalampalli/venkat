@@ -9,7 +9,7 @@ import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { HomeComponent } from './home/home.component';
 import { DataBindingComponent } from './data-binding/data-binding.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { RectangleComponent } from './rectangle/rectangle.component';
 import { CircleComponent } from './circle/circle.component';
@@ -28,6 +28,10 @@ import { BankaccountsComponent } from './bankaccounts/bankaccounts.component';
 import { FlipkartComponent } from './flipkart/flipkart.component';
 import { EmailComponent } from './email/email.component';
 import { ReloadComponent } from './reload/reload.component';
+import { CreateVehicleComponent } from './create-vehicle/create-vehicle.component';
+import { CreateBankaccountsComponent } from './create-bankaccounts/create-bankaccounts.component';
+import { CreateUserComponent } from './create-user/create-user.component';
+import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
 
 @NgModule({
   declarations: [
@@ -55,12 +59,17 @@ import { ReloadComponent } from './reload/reload.component';
     FlipkartComponent,
     EmailComponent,
     ReloadComponent,
+    CreateVehicleComponent,
+    CreateBankaccountsComponent,
+    CreateUserComponent,
+    EmployeeDetailsComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
 
   ],
   providers: [],

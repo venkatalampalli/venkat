@@ -30,6 +30,7 @@ export class FlipkartComponent implements OnInit {
 
   menclothing(){
     this.items=this.items.filter((item:any)=> item.category=="men's clothing");
+    
   }
   jewellery(){
     this.items=this.items.filter((item:any)=> item.category=="jewelery");
