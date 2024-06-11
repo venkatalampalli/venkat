@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { VehicleService } from '../vehicle.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-vehicle',
@@ -15,7 +16,7 @@ export class VehicleComponent implements OnInit {
   public col:string="";
   public order:string="";
 
-  constructor( private _vehicleService:VehicleService) { 
+  constructor( private _vehicleService:VehicleService , private _router: Router) { 
 
 _vehicleService.getVehicles().subscribe(
   (data:any)=>{
@@ -69,5 +70,10 @@ _vehicleService.getVehicles().subscribe(
       }
     )
   }
+  view(id:string){
+    this._router.navigateByUrl('/dashboard/vehicle-details/'+id)
+  }
+edit(id:string){
 
+}
 }

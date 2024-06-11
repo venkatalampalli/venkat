@@ -57,8 +57,14 @@ Page: <select  [(ngModel)]="page" (change)="paged()">
             <td>{{vehicle.cost}}</td>
             <td>{{vehicle.id}}</td>
             <td>
+           
+                <button class="btn btn-primary" (click)="view(vehicle.id)">View</button>
+            
+                <button class="btn btn-warning" (click)="edit(vehicle.id)">Edit</button>
                 <button class="btn btn-danger" (click)="delete(vehicle.id)">Delete</button>
+
             </td>
+
         </tr>
     </tbody>
 </table>

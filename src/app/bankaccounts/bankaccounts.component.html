@@ -43,6 +43,8 @@ Order: <select [(ngModel)]="order" >
             <td><img src="{{bankaccount.profie_picture}}" alt="" width="100px" height="80px" style="border-radius: 50%;"></td>
             <td>{{bankaccount.id}}</td>
             <td>
+                <button class="btn btn-primary" (click)="view(bankaccount.id)">View</button>
+                <button class="btn btn-warning" (click)="edit(bankaccount.id)">Edit</button>
                 <button class="btn btn-dark" (click)="delete(bankaccount.id)">Delete</button>
             </td>
         </tr>

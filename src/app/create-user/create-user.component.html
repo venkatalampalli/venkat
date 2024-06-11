@@ -55,7 +55,7 @@
     <br>
     <div *ngIf="userForm.get('type')?.value== 'dayscholar'">
         <label for="">Bus Fee:</label>
-        <div *ngIf="userForm.get('busfee')?.invalid && userForm.get('phone')?.touched">
+        <div *ngIf="userForm.get('busfee')?.invalid && userForm.get('busfee')?.touched">
             <p *ngIf="userForm.get('busfee')?.errors?.['required']" class="error">Phone Number is Required</p>
             <p *ngIf="userForm.get('busfee')?.errors?.['min']" class="error">Incorrect Phone Number</p>
             <p  *ngIf="userForm.get('busfee')?.errors?.['max']" class="error">Please Enter 10 digits only </p>

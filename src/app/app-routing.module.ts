@@ -27,6 +27,8 @@ import { CreateBankaccountsComponent } from './create-bankaccounts/create-bankac
 import { AuthenticationGuard } from './authentication.guard';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { EmployeeDetailsComponent } from './employee-details/employee-details.component';
+import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.component';
+import { BankAccountDetailsComponent } from './bank-account-details/bank-account-details.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -53,7 +55,9 @@ const routes: Routes = [
     {path:'create-vehicle', component:CreateVehicleComponent},
     {path:'create-bankaccount', component:CreateBankaccountsComponent},
     {path: 'create-user', component: CreateUserComponent},
-    {path:'employee-details', component:EmployeeDetailsComponent}
+    {path:'employee-details', component:EmployeeDetailsComponent},
+    {path: 'vehicle-details/:id', component:VehicleDetailsComponent},
+    {path:'account-details/:id', component:BankAccountDetailsComponent}
   ]},
   {path:'', component: LoginComponent},
   {path:'**', component:PagenotfoundComponent}

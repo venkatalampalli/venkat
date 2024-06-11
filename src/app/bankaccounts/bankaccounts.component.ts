@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { BankaccountsService } from '../bankaccounts.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-bankaccounts',
@@ -12,7 +13,7 @@ export class BankaccountsComponent implements OnInit {
  public page:number=1;
  public column:string="";
  public order:string="";
-  constructor( private _bankservice:BankaccountsService) {
+  constructor( private _bankservice:BankaccountsService ,private _router: Router) {
     _bankservice.getAccounts().subscribe(
       (data:any)=>{
         this.bankaccounts=data;
@@ -66,5 +67,11 @@ export class BankaccountsComponent implements OnInit {
         alert("internal server error");
       }
     )
+  }
+  view(id:number){
+this._router.navigateByUrl('/dashboard/account-details/'+id);
+  }
+  edit(id:any){
+
   }
 }

@@ -1,0 +1,29 @@
+<div class="parent">
+    <div class="child">
+        <div class="left">
+            <img src="{{vehicles.image}}" alt="" width="450px" height="400px">
+            <div class="image">
+                <div class="childimage">
+                    <img class="small" src="{{vehicles.image}}" alt="" width="100px" height="100px">
+                    <img class="small" src="{{vehicles.image}}" alt="" width="100px" height="100px">
+                    <img class="small" src="{{vehicles.image}}" alt="" width="100px" height="100px">
+        
+                </div>
+            </div>
+
+        </div>
+        <div class="right">
+            <h1><strong>Vehicle:</strong> <small> {{vehicles.Vehicle}}</small> </h1>
+            <h1> <strong>Manufacturer:</strong>  <small> {{vehicles.manufacturer}}</small></h1>
+            <h1> <strong>Model:</strong> <small> {{vehicles.model}}</small></h1>
+            <h1><strong>Type:</strong>  <small> {{vehicles.type}}</small></h1>
+            <h1><strong>Fuel:</strong>  <small> {{vehicles.fuel}}</small></h1>
+            <h1><strong>Color:</strong>  <small> {{vehicles.color}}</small></h1>
+            <h1><strong >Cost:</strong>  <small class="red"> {{vehicles.cost |balance}}</small></h1>
+            <br><br>
+            <button class="btn btn-primary">Buy Now</button>
+
+
+        </div>
+    </div>
+</div>

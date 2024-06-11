@@ -1,0 +1,21 @@
+<div class="parent">
+    <div class="child">
+        <div class="left">
+            <img src="{{bankaccount.profie_picture}}" alt="" width="300px" height="300px">
+        <br><br>
+
+        </div>
+        <div class="right">
+            <h1><strong>Account Name:</strong> <small> {{bankaccount.account_name}}</small> </h1>
+            <h1> <strong>Account Number:</strong> <small> {{bankaccount.account_number}}</small></h1>
+            <h1><strong>City:</strong>  <small> {{bankaccount.city}}</small></h1>
+            <h1> <strong>Balance:</strong>  <small class="red"> {{bankaccount.available_balance |balance}}</small></h1>
+
+          
+            <br><br>
+            <button class="btn btn-primary">More Details</button>
+
+            <br><br>
+        </div>
+    </div>
+</div>
