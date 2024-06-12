@@ -71,7 +71,8 @@ export class BankaccountsComponent implements OnInit {
   view(id:number){
 this._router.navigateByUrl('/dashboard/account-details/'+id);
   }
-  edit(id:any){
+  edit(id:number){
+    this._router.navigateByUrl('/dashboard/edit-account/'+id);
 
   }
 }

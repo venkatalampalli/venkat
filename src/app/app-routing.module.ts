@@ -57,7 +57,9 @@ const routes: Routes = [
     {path: 'create-user', component: CreateUserComponent},
     {path:'employee-details', component:EmployeeDetailsComponent},
     {path: 'vehicle-details/:id', component:VehicleDetailsComponent},
-    {path:'account-details/:id', component:BankAccountDetailsComponent}
+    {path:'account-details/:id', component:BankAccountDetailsComponent},
+    {path:'edit-vehicle/:id' , component: CreateVehicleComponent},
+    {path:'edit-account/:id', component:CreateBankaccountsComponent}
   ]},
   {path:'', component: LoginComponent},
   {path:'**', component:PagenotfoundComponent}
