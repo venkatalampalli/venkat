@@ -36,6 +36,17 @@ import { VehicleDetailsComponent } from './vehicle-details/vehicle-details.compo
 import { BankAccountDetailsComponent } from './bank-account-details/bank-account-details.component';
 import { ParentComponent } from './parent/parent.component';
 import { ChildComponent } from './child/child.component';
+import { ProductsComponent } from './products/products.component';
+import { NavigateComponent } from './navigate/navigate.component';
+import { CartComponent } from './cart/cart.component';
+import { Parent1Component } from './parent1/parent1.component';
+import { Child1Component } from './child1/child1.component';
+import { Products1Component } from './products1/products1.component';
+import { Navigate1Component } from './navigate1/navigate1.component';
+import { Cart1Component } from './cart1/cart1.component';
+import { RatingComponent } from './rating/rating.component';
+import { RatingsComponent } from './ratings/ratings.component';
+import { TextareaComponent } from './textarea/textarea.component';
 
 @NgModule({
   declarations: [
@@ -71,6 +82,17 @@ import { ChildComponent } from './child/child.component';
     BankAccountDetailsComponent,
     ParentComponent,
     ChildComponent,
+    ProductsComponent,
+    NavigateComponent,
+    CartComponent,
+    Parent1Component,
+    Child1Component,
+    Products1Component,
+    Navigate1Component,
+    Cart1Component,
+    RatingComponent,
+    RatingsComponent,
+    TextareaComponent,
   ],
   imports: [
     BrowserModule,
