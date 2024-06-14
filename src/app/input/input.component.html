@@ -1,0 +1,14 @@
+<div class="parent">
+    <div class="top">
+        <label for="">Number1:</label>
+        <input type="number" placeholder="01" [(ngModel)]="num1">
+        <br>
+        <label for="">Number2:</label>
+        <input type="number" placeholder="02" [(ngModel)]="num2">
+
+    </div>
+    <div class="bottom">
+        <app-operators [num1]="num1" [num2]="num2" (clear)="catch($event)"></app-operators>
+
+    </div>
+</div>

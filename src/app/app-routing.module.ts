@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 import { LoginComponent } from './login/login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
@@ -40,6 +40,10 @@ import { Navigate1Component } from './navigate1/navigate1.component';
 import { Cart1Component } from './cart1/cart1.component';
 import { RatingComponent } from './rating/rating.component';
 import { RatingsComponent } from './ratings/ratings.component';
+import { AboutCompanyComponent } from './about-us/about-company/about-company.component';
+import { ToDoComponent } from './to-do/to-do.component';
+import { CreateTodoComponent } from './create-todo/create-todo.component';
+import { CalaculatorappComponent } from './calaculatorapp/calaculatorapp.component';
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -81,13 +85,21 @@ const routes: Routes = [
     {path:'navigate1', component:Navigate1Component},
     {path:'cart1', component:Cart1Component},
     {path:'rating', component:RatingComponent},
+    {path:'about-company', component:AboutCompanyComponent},
+    {
+      path: 'payments',
+      loadChildren: () => import('./payments/payments.module').then(m => m.PaymentsModule)
+    },
+    {path:'to-do', component:ToDoComponent},
+    {path:'create-todo/:id' , component:CreateTodoComponent},
+    {path: 'Calaculator-App', component:CalaculatorappComponent}
   ]},
   {path:'', component: LoginComponent},
   {path:'**', component:PagenotfoundComponent}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{preloadingStrategy:PreloadAllModules})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

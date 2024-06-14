@@ -1,0 +1,18 @@
+label{
+    width: 100px;
+    display: inline-block;
+    margin: 10px;
+}
+.top{
+    margin-left: 40px;
+    margin-top: 100px;
+}
+label{
+    color: rgb(0, 136, 255);
+    font-size: larger;
+    font-weight: bolder;
+}
+.bottom{
+    margin-top: 80px;
+    margin-left: 90px;
+}

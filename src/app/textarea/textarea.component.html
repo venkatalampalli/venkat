@@ -1,3 +1,7 @@
-<p>textarea works!</p>
+<div class="parent">
+    
 <textarea [maxLength]="max"  [(ngModel)]="input" (keyup)="click()"  [rows]="10" [cols]="40" ></textarea>
-{{ count }}/{{ max }}
+    <div class="child">
+        <p>{{ count }}/{{ max }}</p>
+    </div>
+</div>

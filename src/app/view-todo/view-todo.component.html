@@ -1,0 +1,10 @@
+<div class="child" *ngFor="let viewTodo of viewTodos ; let i = index">
+    <br>
+    <h5><strong>Task:</strong> <small>{{viewTodo.task}}</small> </h5>
+    <h5><strong>Date:</strong> <small>{{viewTodo.date | date:'MMM d, y, h:mm a' }}</small></h5>
+    <button class="btn btn-success" (click)="view(i)">View</button>
+    <button class="btn btn-primary" (click)="edit(i)">Edit</button>
+    <button class="btn btn-danger" (click)="delete(i)">Delete</button>
+    <br><br>
+
+</div>

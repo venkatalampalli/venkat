@@ -1,0 +1,13 @@
+<h1>TO-DO</h1>
+<form [formGroup]="todoForm" >
+    <label for="task">Task:</label>
+    <textarea name="task" [rows]="5" [cols]="30" formControlName="task"></textarea>
+    <br><br>
+    <label for="time">Time:</label>
+    <input type="datetime-local" formControlName="date">
+    <br><br>
+    <button *ngIf="id" class="btn btn-primary" (click)="create()">Edit</button>
+    <button *ngIf="!id" class="btn btn-primary" (click)="create()">Create</button>
+
+    <button class="btn btn-danger" (click)="reset()">Reset</button>
+</form>

@@ -47,6 +47,15 @@ import { Cart1Component } from './cart1/cart1.component';
 import { RatingComponent } from './rating/rating.component';
 import { RatingsComponent } from './ratings/ratings.component';
 import { TextareaComponent } from './textarea/textarea.component';
+import { AboutUsModule } from './about-us/about-us.module';
+import { ToDoComponent } from './to-do/to-do.component';
+import { CreateTodoComponent } from './create-todo/create-todo.component';
+import { ViewTodoComponent } from './view-todo/view-todo.component';
+import { CheckTodoComponent } from './check-todo/check-todo.component';
+import { CalaculatorappComponent } from './calaculatorapp/calaculatorapp.component';
+import { InputComponent } from './input/input.component';
+import { OperatorsComponent } from './operators/operators.component';
+import { ResultComponent } from './result/result.component';
 
 @NgModule({
   declarations: [
@@ -93,13 +102,22 @@ import { TextareaComponent } from './textarea/textarea.component';
     RatingComponent,
     RatingsComponent,
     TextareaComponent,
+    ToDoComponent,
+    CreateTodoComponent,
+    ViewTodoComponent,
+    CheckTodoComponent,
+    CalaculatorappComponent,
+    InputComponent,
+    OperatorsComponent,
+    ResultComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    AboutUsModule
 
   ],
   providers: [],
