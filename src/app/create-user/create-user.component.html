@@ -25,7 +25,8 @@
 
     <br>
     <label for="">Phone:</label>
-    <input type="number" formControlName="phone">
+    <input type="number" class=" form-control w-25 m-5" [class.is-invalid]="userForm.get('phone')?.invalid && userForm.get('phone')?.touched" 
+    formControlName="phone" [class.is-valid]="userForm.get('phone')?.valid">
     <div *ngIf="userForm.get('phone')?.invalid && userForm.get('phone')?.touched">
         <p *ngIf="userForm.get('phone')?.errors?.['required']" class="error">Phone Number is Required</p>
         <p *ngIf="userForm.get('phone')?.errors?.['min']" class="error">Incorrect Phone Number</p>

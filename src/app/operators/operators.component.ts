@@ -11,7 +11,7 @@ export class OperatorsComponent implements OnInit {
   @Input() num2:any=null;
   result:any=null;
   clearIt: any= null;
-  @Output( ) clear:EventEmitter<any>= new EventEmitter();
+  @Output() clear:EventEmitter<any>= new EventEmitter();
   constructor( private _calculatorService:CalculatorService) { }
 
   ngOnInit(): void {
